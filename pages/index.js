@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import {baseUrl, fetchApi} from "../utils/fetchApi";
+import Property from "../components/Property";
 
 const Banner = ({purpose, title1, title2, desc1, desc2, buttonText, linkName, imageUrl}) => (
     <Flex flexWrap="wrap" justifyContent='center' alignItems='center' m='10'>
@@ -24,11 +25,8 @@ const Banner = ({purpose, title1, title2, desc1, desc2, buttonText, linkName, im
 )
 
 export default function Home({propertiesForSale, propertiesForRent}) {
-    console.log(propertiesForSale, propertiesForRent)
-
     return (
         <Box>
-            <h1>Hello World</h1>
             <Banner
                 purpose={'RENT A HOME'}
                 title1={'Rental Homes for'}
