@@ -12,7 +12,7 @@ const PropertyDetails = ({
                                  isVerified, description, type, purpose, furnishingStatus, amenities, photos
                              }
                          }) => (
-    <Box maxWidth='100px' margin='auto' p='4'>
+    <Box maxWidth='1000px' margin='auto' p='4'>
         {photos && <ImageScrollbar data={photos}/>}
         <Box w='full' p='6'>
             <Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
